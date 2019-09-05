@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge charset=Shift_JIS">
+    <title>劍與遠征肥料計算機 v1.1</title>
+    <LINK href="0905.css" rel="stylesheet" type="text/css">
+    <script src="0905.js"></script>
+</head>
+<body>
+    <div id="big">
+        <div id="lef">
+            <img src="img/b1.jpg" alt="" width="100%" id="img2">
+        </div>
+        <div id="mid">
+            <h1>劍與遠征肥料計算機v1.1</h1>
+            <div id="purple">
+                <h2>原生紫卡區</h2>
+                希望獲得
+                <select name="" id="u1" onchange=" print_value();">
+                    <option value="1">盧修斯(白盾)</option>
+                    <option value="2">布魯特(獅子)</option>
+                    <option value="3">妮莫拉(小羊)</option>
+                    <option value="4">雪米拉(女妖)</option>
+                </select>
+                品階為：
+                <select name="" id="u2" onchange=" print_value();">
+                    <option value="7">Ascended白</option>
+                    <option value="6" style="background-color: red">Mythic+紅+</option>
+                    <option value="5" style="background-color: red">Mythic紅</option>
+                    <option value="4" style="background-color: yellow">Legendary+金+</option>
+                    <option value="3" style="background-color: yellow">Legendary金</option>
+                    <option value="2" style="background-color: palevioletred">Elite+紫+</option>
+                    <option value="1" style="background-color: palevioletred">Elite紫</option>
+                </select>
+                <hr>
+                需求 <span id="s1">同族</span> 紫卡 <span id="s2">0</span> 張， 至少含
+                <span id="s3">盧修斯</span> 紫卡 <span id="s4">0</span>張
+                <hr>
+                現有 <span id="s5">同族</span> 紫卡
+                <select name="" id="u3" onchange=" print_value();">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                張，紫+
+                <select name="" id="u4" onchange=" print_value();">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                張，金卡
+                <select name="" id="u5" onchange=" print_value();">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                張
+                <br>
+                換算 已有紫卡 <span id="s6">0</span> 張，尚缺 <span id="s7">0</span> 張紫卡，
+                達成率為： <span id="s8">0.0</span>%
+                <hr>
+                現有 <span id="s9">盧修斯</span> 品階為
+                <select name="" id="u6" onchange=" print_value();">
+                    <option value="1" style="background-color: palevioletred">Elite紫</option>
+                    <option value="2" style="background-color: palevioletred">Elite+紫+</option>
+                    <option value="3" style="background-color: yellow">Legendary金</option>
+                    <option value="4" style="background-color: yellow">Legendary+金+</option>
+                    <option value="5" style="background-color: red">Mythic紅</option>
+                    <option value="6" style="background-color: red">Mythic+紅+</option>
+                </select>
+                <br>
+                換算為 <span id="s10">盧修斯</span> 紫卡 <span id="s11">0</span> 張，
+                尚缺 <span id="s12">0</span> 張，達成率為： <span id="s13">0.0</span>%
+                <br>
+                <br>
+            </div>
+            <img src="img/eye.jpg" alt="" width="30%" id="img4">
+            <img src="img/w2.jpg" alt="" width="100%" id="img1">
+            <div id="blue">
+                <h2>原生藍卡區</h2>
+                希望獲得
+                <select name="" id="u7" onchange=" print_value1();">
+                    <option value="1">米瑞兒(火法)</option>
+                    <option value="2">薩韋斯(羊頭)</option>
+                    <option value="3">雅　頓(爺爺)</option>
+                    <option value="4">韋　旦(吸血)</option>
+                </select>
+                品階為：
+                <select name="" id="u8" onchange=" print_value1();">
+                    <option value="4" style="background-color: yellow">Legendary+金+</option>
+                    <option value="3" style="background-color: yellow">Legendary金</option>
+                    <option value="2" style="background-color: palevioletred">Elite+紫+</option>
+                    <option value="1" style="background-color: palevioletred">Elite紫</option>
+                </select>
+                <hr>
+                需求 <span id="s21">同族</span> 藍卡 <span id="s22">0</span> 張， 至少含
+                <span id="s23">米瑞兒</span> 藍卡 <span id="s24">0</span>張
+                <hr>
+                現有 <span id="s25">同族</span> 藍+
+                <select name="" id="u9" onchange=" print_value1();">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                張，紫
+                <select name="" id="u10" onchange=" print_value1();">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                張，紫+
+                <select name="" id="u11" onchange=" print_value1();">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                張
+                <br>
+                換算 已有藍卡 <span id="s26">0</span> 張，尚缺 <span id="s27">0</span> 張藍卡，
+                達成率為： <span id="s28">0.0</span>%
+                <hr>
+                現有 <span id="s29">米瑞兒</span> 品階為
+                <select name="" id="u12" onchange=" print_value1();">
+                    <option value="1" style="background-color: #c4e1ff"> Rare+藍+</option>
+                    <option value="2" style="background-color: palevioletred">Elite紫</option>
+                    <option value="3" style="background-color: palevioletred">Elite+紫+</option>
+                    <option value="4" style="background-color: yellow">Legendary金</option>
+                </select>
+                <br>
+                換算為 <span id="s30">米瑞兒</span> 藍卡 <span id="s31">0</span> 張，
+                尚缺 <span id="s32">0</span> 張，達成率為： <span id="s33">0.0</span>%
+                <br>
+                <br>
+            </div>
+            作者：eric211924 時間：2019/9
+            <br>
+            圖片來源：<a href="https://www.facebook.com/AFKarenaTW" target="_blank">https://www.facebook.com/AFKarenaTW</a>
+        </div>
+        <div id="rig">
+            <img src="img/w1.jpg" alt="" width="100%" id="img3">
+        </div>
+    </div>
+</body>
+</html>
